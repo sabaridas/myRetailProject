@@ -1,0 +1,10 @@
+version: "3.7"
+server:
+  port:8888
+services:
+  myRetail:
+    image: myretailapp
+    ports:
+      - "9080:8080"
+    environment:
+      - DOWNSTREAM_URI=https://7665ee1b-4108-4c38-96b4-c604ea8c75de.mock.pstmn.io/pdp/tcin

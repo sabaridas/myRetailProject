@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-retail
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+     appname: myretail
+  template:
+    metadata:
+      labels:
+        appname: myretail
+    spec:
+      containers:
+        - name: myretail
+          image: myretailapp
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: DOWNSTREAM_URI
+              value: https://7665ee1b-4108-4c38-96b4-c604ea8c75de.mock.pstmn.io/pdp/tcin
+          ports:
+            - containerPort: 8888
