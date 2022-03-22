@@ -4,7 +4,7 @@
 ## Description
 1. This project is build using SpringBoot and exposes 2 REST endpoints : GET and POST on /products/{id}.
    ![img.png](img.png)
-    
+    ![img_1.png](img_1.png)
 2. The project contains a dockerfile that is used to containerize the project. 
 3. The project can be deployed in Kubernetes by using deployment.yaml and service.yaml 
 files present in k8s-templates folder.
