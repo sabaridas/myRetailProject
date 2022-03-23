@@ -7,4 +7,4 @@ services:
     ports:
       - "9080:8080"
     environment:
-      - DOWNSTREAM_URI=https://7665ee1b-4108-4c38-96b4-c604ea8c75de.mock.pstmn.io/pdp/tcin
+      - DOWNSTREAM_URI=https://ba1bc994-5c2c-4fe3-a51e-0a1d5bca3efe.mock.pstmn.io/productid/
