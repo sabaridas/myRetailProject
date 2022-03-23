@@ -17,7 +17,8 @@ files present in k8s-templates folder.
 5. Mongo db atlas is used as a no-SQL database for the project. 
     As Complex queries needs to be made on this data, so that's why selected row based oriented DB which is "MongoDB".
    
-   
+6. Unit-test cases have been added(using mocking) to test the interfaces.
+7. 
 ## Requirements
 For this project to work an environment variable with the name "DOWNSTREAM_URI" has to be created which should
 contain the URL of the external API server. The code will append the "{productId}" to this URL
